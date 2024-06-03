@@ -112,7 +112,7 @@ function Reward() {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <Stack alignItems="flex-start">
+            <Stack alignItems="flex-end">
               <Box mb={2}>
                 <img src={hero2} alt="Sell 100 Products" style={{ width: "100%", maxWidth: "300px" }} />
               </Box>

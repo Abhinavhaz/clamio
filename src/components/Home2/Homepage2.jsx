@@ -11,12 +11,12 @@ function HomePage2(){
 
     const data=[
 
-        {title:"Product A", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
-        {title:"Product B", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
-        {title:"Product C", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
-        {title:"Product D", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
-        {title:"Product E", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
-        {title:"Product F", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
+        {title:"Category Name", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
+        {title:"Category Name", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
+        {title:"Category Name", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
+        {title:"Category Name", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
+        {title:"Category Name", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
+        {title:"Category Name", par: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"},
     ]
     const  xyz = 
     
@@ -96,14 +96,17 @@ Input Product Image/Video
     </Stack>
     </Stack>
 
-    <Stack  sx={{height:"118px", width:"123px",backgroundColor:"#FFDB58",marginRight:"20px"}}> <Stack 
+    <Stack  sx={{height:"118px", width:"123px",backgroundColor:"#FFDB58",marginRight:"20px"}}>
+         <Stack 
         sx={{ height: "100%", width: "100%" }}
         justifyContent="center"
         alignItems="center">
         <img src={plus} alt="plus" style={{height:"30px",width:"30px",}}/>
-    </Stack></Stack>
+    </Stack>
+    </Stack>
 
-    <Stack  sx={{height:"118px", width:"123px",backgroundColor:"#FFDB58",}}><Stack 
+    <Stack  sx={{height:"118px", width:"123px",backgroundColor:"#FFDB58",}}>
+        <Stack 
         sx={{ height: "100%", width: "100%" }}
         justifyContent="center"
         alignItems="center">
@@ -137,14 +140,22 @@ Input Product name
 <Box
 
 pb={5}
-      sx={{
-        width: 532,
-        maxWidth: '100%',
-        borderRadius:"10px",
-
-      }}
+      
     >
-      <TextField fullWidth  sx={{backgroundColor:"#D9D9D9",borderRadius:"20px"}} label="Input Area"  /> 
+      <TextField
+        InputProps={{
+       sx:{  width:"552px",borderRadius:"10px",backgroundColor:"#D9D9D9"  ,border:"1px solid black"},
+    
+         startAdornment: (
+           <InputAdornment 
+             position="start"
+             sx={{ marginLeft:"150px", width: '100%' }}
+           >
+             Input Area
+           </InputAdornment>
+         ),
+       }}
+     />
     </Box>
 
     
@@ -152,15 +163,9 @@ pb={5}
 Input Product Description
 </Typography>
 
-
-
-
-   
-
-
     <TextField
         multiline
-        rows={10} // Adjust the rows to match the height (optional)
+        rows={10} 
         
         sx={{
           width: "535px",
@@ -178,7 +183,7 @@ Input Product Description
 </Box>
 
 </Stack>
-
+{/* .................................upppr half.................................. */}
 
 
 

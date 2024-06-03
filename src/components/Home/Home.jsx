@@ -1,6 +1,4 @@
 
-
-
 import { Button, Container, Stack, Typography ,Box} from "@mui/material"
 import Menubar from "../Menubar/Menubar"
 import { Link } from "react-router-dom"
@@ -52,13 +50,8 @@ Input Product Image/Video
 </Box>
 
 
-
-
-
 <Box mt={10} sx={{position:"absolute"}} >
 <img src={Banner} />
-
-
 </Box>
 
 

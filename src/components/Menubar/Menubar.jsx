@@ -92,6 +92,7 @@ function Menubar(){
                         </Typography>
                         <Typography variant="subtitle1"   fontWeight={700} >
                         <Link to="/Reward" style={{ textDecoration: "none", color: "inherit" }}><EmojiEventsIcon/>  Rewards </Link>
+                        
                         </Typography>
 
                         {isMobile && (
@@ -130,4 +131,3 @@ function Menubar(){
     );
 }
 export default Menubar
-
